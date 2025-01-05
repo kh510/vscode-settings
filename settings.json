@@ -1,0 +1,57 @@
+{
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[css]": {
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": true,
+        "<C-z>": true
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        },
+        {
+            "before": ["<C-r>"],
+            "commands": ["redo"]
+        },
+        {
+            "before": ["<leader>", "b", "e"],
+            "commands": ["workbench.action.showAllEditors"]
+        },
+        {
+            "before": ["<leader>", "b", "d"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "b", "o"],
+            "commands": ["workbench.action.closeOtherEditors"]
+        },
+        {
+            "before": ["<leader>", "<space>"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+        },
+    ],
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+}
